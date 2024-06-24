@@ -1,0 +1,400 @@
+
+
+.welcome-modal,
+.welcome-modal-btn {
+    position: fixed;
+    right: 24px;
+    z-index: 12
+}
+
+.welcome-modal {
+    bottom: 0;
+    width: 320px;
+    background: #fff;
+    border-radius: 12px 12px 0 0;
+    padding: 0 24px 16px;
+    -webkit-box-shadow: 0 0 44px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 44px rgba(0, 0, 0, .2)
+}
+
+.welcome-modal iframe {
+    pointer-events: none;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block
+}
+
+.welcome-modal .welcome-modal-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    background: #e6ebf0;
+    border-radius: 4px;
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.welcome-modal .welcome-modal-close i:before {
+    font-weight: 700 !important
+}
+
+.welcome-modal-btn {
+    bottom: 4px;
+    height: 44px;
+    padding: 0 20px;
+    background: #031e23;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    border-radius: 8px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.welcome-modal-btn.active {
+    bottom: -50px
+}
+
+.welcome-modal-btn i {
+    margin-top: 6px
+}
+
+@media (min-width:1301px) and (max-width:1400px) {
+    .header {
+        width: calc(100% - 250px)
+    }
+
+    .brand-logo,
+    .left-side-bar {
+        width: 250px
+    }
+
+    .main-container {
+        padding-left: 270px
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+    .device-usage-chart .width-50-p {
+        width: 100%
+    }
+}
+
+@media (min-width:1301px) {
+
+    .sidebar-shrink .left-side-bar,
+    .sidebar-shrink .left-side-bar.open {
+        left: -281px
+    }
+
+    .sidebar-shrink .header {
+        width: 100%
+    }
+
+    .sidebar-shrink .main-container {
+        padding-left: 20px
+    }
+}
+
+@media (max-width:1300px) {
+    .main-container {
+        padding-left: 5px;
+        padding-right: 5px
+    }
+
+    .header-left .menu-icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .header {
+        width: 100%
+    }
+
+    .left-side-bar {
+        left: -281px
+    }
+
+    .left-side-bar .close-sidebar {
+        display: block
+    }
+
+    .left-side-bar:before {
+        display: block;
+        opacity: 0;
+        visibility: hidden
+    }
+
+    .left-side-bar.open:before {
+        opacity: 1;
+        visibility: visible;
+        display: none
+    }
+
+    .left-side-bar .brand-logo a {
+        text-align: left;
+        padding: 5px 15px
+    }
+
+    .left-side-bar .brand-logo a .svg,
+    .left-side-bar .brand-logo a img {
+        margin: 0
+    }
+
+    .header-right .brand-logo {
+        display: table
+    }
+
+    .header-right .menu-icon {
+        display: block;
+        padding-left: 15px;
+        padding-top: 7px
+    }
+
+    .footer-wrap {
+        width: 100%
+    }
+
+    .mobile-menu-overlay {
+        display: block;
+        opacity: 0;
+        visibility: hidden
+    }
+
+    .mobile-menu-overlay.show {
+        opacity: .6;
+        visibility: visible
+    }
+}
+
+@media (min-width:1025px) {
+    .header-left .header-search {
+        display: block !important
+    }
+}
+
+@media (max-width:1024px) {
+    .header {
+        position: relative
+    }
+
+    .header-left {
+        width: 25%
+    }
+
+    .header-right {
+        width: 75%
+    }
+
+    .main-container {
+        padding-top: 10px
+    }
+
+    .header-left .search-toggle-icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .header-left .header-search {
+        padding: 15px 20px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: #fff;
+        display: none
+    }
+
+    .register-page-wrap .wizard-content .wizard {
+        padding-left: 300px
+    }
+
+    .register-page-wrap .wizard-content .wizard .steps {
+        width: 300px
+    }
+}
+
+@media (max-width:991px) {
+    .device-usage-chart .width-50-p {
+        width: 100%
+    }
+}
+
+@media (max-width:767px) {
+    .header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, .1)
+    }
+
+    .main-container {
+        padding-top: 80px
+    }
+
+    .login-box {
+        padding: 40px 15px
+    }
+
+    .login-header .brand-logo a img {
+        max-width: 150px
+    }
+
+    .pre-loader {
+        background-size: 43%
+    }
+
+    .xs-pd-20-10 {
+        padding: 20px 10px
+    }
+
+    .xs-mb-20 {
+        margin-bottom: 20px
+    }
+
+    .h1,
+    h1 {
+        font-size: 2rem
+    }
+
+    .h2,
+    h2 {
+        font-size: 1.6rem
+    }
+
+    .h4,
+    h4 {
+        font-size: 1.4rem
+    }
+
+    .main-container,
+    .timeline ul li {
+        padding-bottom: 0
+    }
+
+    .footer-wrap {
+        position: relative;
+        height: auto
+    }
+
+    .user-notification {
+        margin-right: 5px
+    }
+
+    .user-notification .dropdown-menu {
+        width: 100%;
+        min-width: 300px
+    }
+
+    .user-info-dropdown .dropdown-toggle .user-name {
+        display: none
+    }
+
+    .page-header {
+        margin-bottom: 30px
+    }
+
+    .forgot-password {
+        text-align: center
+    }
+
+    .ionicons-list li {
+        width: 16.6%
+    }
+
+    .timeline .timeline-date {
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+        left: 35px
+    }
+
+    .timeline ul:before {
+        left: 10px
+    }
+
+    .timeline ul li {
+        padding-left: 0
+    }
+
+    .timeline ul li:before {
+        left: 2px;
+        top: 28px
+    }
+
+    .fc-toolbar .fc-left,
+    .fc-toolbar .fc-right {
+        float: none !important;
+        padding-bottom: 10px
+    }
+
+    .fc-toolbar .fc-left:after,
+    .fc-toolbar .fc-right:after {
+        content: "";
+        clear: both;
+        display: table
+    }
+
+    .faq-wrap .card-header .btn {
+        font-size: 17px
+    }
+
+    .error-page h1 {
+        font-size: 150px
+    }
+}
+
+@media (max-width:660px) {
+    .docs-buttons .btn-group-crop {
+        display: block
+    }
+
+    .select-role .btn-group .btn {
+        padding-left: 35px;
+        font-size: 14px
+    }
+
+    .select-role .btn-group .btn .icon {
+        left: 5px;
+        width: 25px;
+        height: 25px
+    }
+
+    .select-role .btn-group .btn .icon .svg {
+        width: 25px;
+        height: 25px
+    }
+
+    .forgot-password a {
+        font-size: 14px;
+        font-weight: 600
+    }
+
+    .btn-group-lg>.btn,
+    .btn-lg {
+        font-size: 16px
+    }
+
+    .register-page-wrap .wizard-content .wizard {
+        padding-left: 0
+    }
+
+    .register-page-wrap .wizard-content .wizard .steps {
+        display: none
+    }
+}
